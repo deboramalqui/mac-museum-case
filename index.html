@@ -72,13 +72,12 @@
 <header class="hero"><div class="wrap">
   <div class="over">Case study · UX design · 2022</div>
   <h1>MAC: booking a school visit to the museum, with the paperwork included</h1>
-  <p class="lead body1 med">A reservations app for the Museo de Arte Contemporáneo (Universidad Nacional del Litoral, Santa Fe). Research, personas, usability tests, and the UI kit rebuilt on Material Design 2.</p>
+  <p class="lead body1 med">A reservations app for the Museo de Arte Contemporáneo (Universidad Nacional del Litoral, Santa Fe). Research, personas, usability tests, and the UI kit on Material Design 2.</p>
   <dl class="meta">
     <div><dt>Project</dt><dd>MAC UNL · educational visits app</dd></div>
     <div><dt>Role</dt><dd>UX Designer (research → mockups)</dd></div>
-    <div><dt>When</dt><dd>March – May 2022</dd></div>
+    <div><dt>When</dt><dd>2022</dd></div>
     <div><dt>Method</dt><dd>Interviews, personas, journeys, wireframes, 2 usability rounds</dd></div>
-    <div><dt>This page</dt><dd>2022 kit (Material 2) + rebuilt kit (2026)</dd></div>
   </dl>
 </div></header>
 
@@ -103,8 +102,8 @@
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-h"><div class="over">03 — The 2022 kit, and the rebuild</div><h2>Material 2, done properly this time</h2>
-  <p>The 2022 kit had the right pieces (cards, menus, backdrop, app bar) but mixed sizes, a pure-black contained card and a flat blue menu with no elevation. The rebuild keeps the museum blue and the façade backdrop, and applies the M2 spec to every component.</p></div>
+  <div class="sec-h"><div class="over">03 — The kit</div><h2>Material 2, by the spec</h2>
+  <p>The 2022 kit had the right pieces (cards, menus, backdrop, app bar) but mixed sizes, a pure-black contained card and a flat blue menu with no elevation. The kit keeps the museum blue and the façade backdrop, and applies the M2 spec to every component.</p></div>
   <figure><img src="img/before-kit.png" alt="2022 kit: cards and menus"><figcaption>2022 · Cards and menus from the original kit (Figma).</figcaption></figure>
 
   <div class="sheet" style="margin-top:24px">
@@ -262,7 +261,7 @@
 <section><div class="wrap">
   <div class="sec-h"><div class="over">05 — Accessibility</div><h2>Built into the kit</h2></div>
   <div class="grid g3">
-    <div class="card card--outlined card__body"><div class="h6">Contrast</div><p class="body2 med">Primary #0277BD on white is 5.1:1; white on primary passes for text ≥ 14px bold / 18px. Body text at 87 % black is 16:1.</p></div>
+    <div class="card card--outlined card__body"><div class="h6">Contrast</div><p class="body2 med">Primary #0277BD on white is 4.8:1 (and white on primary the same), which passes AA for normal text. Body text at 87 % black is 16:1.</p></div>
     <div class="card card--outlined card__body"><div class="h6">No swipe-only actions</div><p class="body2 med">Tabs and calendar work by tap and keyboard; nothing depends on a gesture, as the round-2 findings asked.</p></div>
     <div class="card card--outlined card__body"><div class="h6">Screen readers</div><p class="body2 med">App bar, tabs and bottom nav use native roles; the dialog is labelled; progress reports its value.</p></div>
   </div>
@@ -270,7 +269,7 @@
 
 </main>
 
-<footer><div class="wrap" style="padding:40px 24px 64px"><p class="cap med">MAC UNL · UX case, March–May 2022 (research, personas, wireframes, usability tests). Material 2 kit rebuilt in 2026 for this case study. Exhibition names on these screens are placeholders.</p></div></footer>
+<footer><div class="wrap" style="padding:40px 24px 64px"><p class="cap med">MAC UNL · UX case, 2022 (research, personas, wireframes, usability tests). Material 2 component kit. Exhibition names on these screens are placeholders.</p></div></footer>
 
 <script>
   document.addEventListener('pointerdown',e=>{const h=e.target.closest('.sl');if(!h)return;const r=h.getBoundingClientRect(),d=Math.max(r.width,r.height)*2;const s=document.createElement('span');s.className='ripple';s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;h.appendChild(s);s.addEventListener('animationend',()=>s.remove())});
